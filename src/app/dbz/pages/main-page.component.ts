@@ -13,7 +13,7 @@ export class MainPageComponent {
 
 
   public get characters() : Character[] {
-    return [...this.dbzService.characters];
+    return [...this.dbzService.characters]; // Use spread to create a copy of the property instead of using it directly.
   }
 
   onDeleteCharacter(id: string): void {
